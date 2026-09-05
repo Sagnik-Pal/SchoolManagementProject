@@ -32,7 +32,7 @@ class Persons(ABC):
     
     @staticmethod
     def validate_email(email):
-        if "@" and "." in email:
+        if "@" in email and "." in email:
             return True 
         else:
             return False 
